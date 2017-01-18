@@ -1,0 +1,22 @@
+{
+  "name": "contact_manager",
+  "version": "1.0.0",
+  "description": "A command line app",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Duyile Oluwatomi John",
+  "license": "ISC",
+  "bin": {
+    "add": "./index.js",
+    "text": "./send.js",
+    "search": "./find.js",
+    "view": "./viewcontacts.js",
+    "delete": "./remove.js"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "dotenv": "^4.0.0",
+    "firebase": "^3.6.5"
+  }
+}
