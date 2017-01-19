@@ -9,7 +9,7 @@ Run command:
 Basic operations:
 
 1. To Add Contact:
-  Run command: add -n "name" -p "phone_np"
+  Run command: add -n "name" -p "phone_no"
   
 2. To search for a contact:
   Run command: search "name"
