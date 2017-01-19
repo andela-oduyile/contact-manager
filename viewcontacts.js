@@ -9,6 +9,7 @@ firebase.initializeApp(config);
 var ref = firebase.database().ref();
 var contactRef = ref.child('contact');
 
+console.log("Processing...");
 function viewAllContacts(){
 
 	var names = [];
