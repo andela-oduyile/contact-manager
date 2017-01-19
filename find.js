@@ -87,6 +87,8 @@ function addItems(names, first_names, last_names, contacts, phone_no, keys){
 	}
 }
 
+console.log("Searching...");
+
 function search() {
 	var searchItem = getSearchItem();
 
