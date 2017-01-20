@@ -19,4 +19,6 @@ Basic operations:
   
 4. To view all contacts:
   Run command: view -a
-  
+
+5. To Delete a given contact:
+  Run command: delete "name"
