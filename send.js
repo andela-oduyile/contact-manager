@@ -10,8 +10,8 @@ var querystring = require('querystring');
 var https       = require('https');
  
 // Your login credentials
-var username = process.env.USERNAME;
-var apikey   = process.env.MESSAGEAPIKEY;
+var username = process.env.USER_NAME;
+var apikey   = process.env.MESSAGE_APIKEY;
 
 
 var ref = firebase.database().ref();
@@ -84,8 +84,9 @@ contactRef.orderByChild('name')
                 var jsObject   = JSON.parse(chunk);
                 var recipients = jsObject.SMSMessageData.Recipients;
                 if ( recipients.length > 0 ) {
+                    console.log("Message sent!");
                     for (var i = 0; i < recipients.length; ++i ) {
-                        var logStr  = 'number=' + recipients[i].number;
+                        var logStr  = 'Details: number=' + recipients[i].number;
                         logStr     += ';cost='   + recipients[i].cost;
                         logStr     += ';status=' + recipients[i].status; // status is either "Success" or "error message"
                         console.log(logStr);
@@ -108,5 +109,4 @@ contactRef.orderByChild('name')
     
        
 });
-
 
