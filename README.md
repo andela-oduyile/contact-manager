@@ -1,4 +1,4 @@
-# bc-18--Contact-Manager-SMS-
+Contact-Manager-SMS-
 A Command Line Application to manage contacts with SMS functionality
 
 Getting Started
